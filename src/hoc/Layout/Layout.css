@@ -1,0 +1,9 @@
+.Content {
+    margin-top: 72px;
+}
+
+@media (min-width: 501px){
+    .MobileOnly{
+        display: none;
+    }
+}
