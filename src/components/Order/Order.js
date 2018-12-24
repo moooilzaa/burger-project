@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Order.css";
+require('../../index.css')
 
 const order = props => {
 	const ingredients = [];

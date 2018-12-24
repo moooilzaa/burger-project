@@ -112,6 +112,7 @@ class BurgerBuilder extends Component {
 		) : (
 			<Spinner />
 		);
+
 		let orderSummary = null;
 		if (this.props.ings) {
 			burger = (
@@ -138,9 +139,9 @@ class BurgerBuilder extends Component {
 			);
 		}
 
-		if (this.state.loading) {
-			orderSummary = <Spinner />;
-		}
+		// if (this.state.loading) {
+		// 	orderSummary = <Spinner />;
+		// }
 
 		return (
 			<Aux>

@@ -32,7 +32,7 @@ class Orders extends Component {
 		if(!this.props.loading){
 			orders = <div>
 				{this.props.orders.map(order => (
-					<Order key={order.id} ingredients={order.ingredient} price={order.price} clicked={() => this.props.onDelOrders(order.id)}/>
+					<Order key={order.id} ingredients={order.ingredient} price={order.price}/>
 				))}
 			</div>
 		}
@@ -53,7 +53,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
 	return{
 		onFetchOrders: () => dispatch(actions.fetchOrder()),
-		onDelOrders: (id) => dispatch(actions.DelOrder(id))
+		// onDelOrders: (id) => dispatch(actions.DelOrder(id))
 	};
 };
 
